@@ -1,0 +1,59 @@
+
+html {
+  height: 100%;
+}
+
+html,
+html:before,
+html:after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  box-sizing: inherit;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: $main-font;
+  color: #ffffff;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  border-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+          clip-path: inset(100%);
+
+  -webkit-clip-path: inset(100%);
+}

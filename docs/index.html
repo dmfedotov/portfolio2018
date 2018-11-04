@@ -6,58 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Добро пожаловать</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <div class="wrapper  welcome-page">
-    <a class="button button--auth" href="#">Авторизоваться</a>
-    <article class="auth  welcome__auth">
-      <section class="auth__info  person">
-        <div class="person__photo">
-          <img src="#" alt="Фото автора портфолио">
-        </div>
-        <p class="person__name">Дмитрий Федотов</p>
-        <p class="person__description">Личный сайт веб разработчика</p>
-        <div class="auth__socials">
-          <ul class="social">
-            <li class="social__item">
-              <span class="visually-hidden">Я в контакте</span>
-              <a class="social__link" href="#">
-                <svg class="social__icon" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <span class="visually-hidden">Я в гитхабе</span>
-              <a class="social__link" href="#">
-                <svg class="social__icon" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <span class="visually-hidden">Я в инстаграме</span>
-              <a class="social__link" href="#">
-                <svg class="social__icon" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="auth__links">
-        <a class="auth__link" href="my-works.html">Мои работы</a>
-        <a class="auth__link" href="about.html">Обо мне</a>
-        <a class="auth__link" href="blog.html">Блог</a>
-      </section>
-    </article>
+    <main class="page-content">
+      <a class="button button--auth" href="#">Авторизоваться</a>
+
+      <article class="auth  welcome-page__auth">
+        <section class="auth__info  person">
+          <div class="person__photo">
+            <img src="img/avatar.JPG" alt="Фото автора портфолио">
+          </div>
+          <p class="person__name">Дмитрий Федотов</p>
+          <p class="person__description">Личный сайт веб разработчика</p>
+          <div class="auth__socials">
+            <ul class="social">
+              <li class="social__item">
+                <span class="visually-hidden">Я в контакте</span>
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="31" height="17">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <span class="visually-hidden">Я в гитхабе</span>
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="26" height="22">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <span class="visually-hidden">Я в инстаграме</span>
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="auth__links">
+          <a class="auth__link" href="my-works.html">Мои работы</a>
+          <a class="auth__link" href="about.html">Обо мне</a>
+          <a class="auth__link" href="blog.html">Блог</a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="page-footer  page-footer--welcome">
+      <p class="page-footer__copyright  copyright">© Дмитрий Федотов<br> создано с любовью в LoftSchool | 2017</p>
+    </footer>
   </div>
 
-  <footer class="page-footer  page-footer--welcome">
-    <p class="footer__copyright  copyright">© Дмитрий Федотов создано с любовью в LoftSchool | 2017</p>
-  </footer>
 </body>
 
 </html>
