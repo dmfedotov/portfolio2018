@@ -3,17 +3,16 @@ html {
   height: 100%;
 }
 
-html,
-html:before,
-html:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body,
 html {
-  box-sizing: inherit;
   min-width: 320px;
-  min-height: 100vh;
+  height: 100%;
   margin: 0;
 
   font-weight: 400;
