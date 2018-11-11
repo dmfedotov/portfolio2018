@@ -1,0 +1,51 @@
+.nav--fullscreen {
+  position: relative;
+
+  width: 26px;
+  height: 23px;
+
+  .nav__list {
+    display: none;
+  }
+}
+
+.nav__toggle {
+  position: absolute;
+  top: 50%;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  transform: translateY(-50%);
+}
+
+.nav__toggle-elem {
+  display: block;
+  width: 26px;
+  height: 3px;
+
+  background: #ffffff;
+  border-radius: 2px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 26px;
+    height: 3px;
+
+    background: #ffffff;
+    border-radius: 2px;
+  }
+
+  &::before {
+    top: -10px;
+  }
+
+  &::after {
+    bottom: -10px;
+  }
+}

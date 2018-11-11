@@ -1,4 +1,6 @@
 .wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,8 +8,6 @@
 }
 
 .wrapper--welcome {
-  position: relative;
-
   background: #3b5381 url("../../img/bg-mobile.jpg") no-repeat center;
   background-size: cover;
 }
