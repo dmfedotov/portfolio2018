@@ -16,3 +16,19 @@
   border: 1px solid #ffffff;
   transform: translateX(-50%);
 }
+
+.button--slider {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: $color-accent;
+}
+
+.button--slider__icon {
+  margin-right: 12px;
+
+  fill: #ffffff;
+}
