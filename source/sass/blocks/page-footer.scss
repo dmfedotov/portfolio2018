@@ -6,6 +6,10 @@
   &--welcome {
     background-color: transparent;
   }
+
+  &--transparent {
+    opacity: 0.85;
+  }
 }
 
 .page-footer__top {
@@ -14,8 +18,9 @@
 }
 
 .page-footer__intro {
-  margin-top: 18px;
+  margin: 0;
   margin-bottom: 15px;
+  padding-top: 18px;
   padding-bottom: 15px;
 
   font-weight: 300;

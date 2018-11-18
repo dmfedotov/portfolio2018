@@ -19,6 +19,7 @@
 
 .button--slider {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: auto;
   margin-right: auto;
@@ -31,4 +32,19 @@
   margin-right: 12px;
 
   fill: #ffffff;
+}
+
+.button--submit {
+  font-size: 16px;
+
+  background-color: $color-accent;
+  border: none;
+}
+
+.button--transparent {
+  font-weight: 500;
+  font-size: 16px;
+
+  background-color: transparent;
+  border: none;
 }

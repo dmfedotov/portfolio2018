@@ -4,6 +4,9 @@
 }
 
 .slider__display {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   padding: 50px 44px;
 
   background-color: #e3e2de;

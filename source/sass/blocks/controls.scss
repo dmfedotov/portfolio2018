@@ -8,19 +8,18 @@
 .controls__right {
   position: relative;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 93px;
 }
 
 .controls__image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   z-index: -1;
 
   width: 65px;
-
-  transform: translate(-50%, -50%);
 }
 
 .controls__button {
