@@ -1,0 +1,22 @@
+.skill {
+  position: relative;
+
+  width: 110px;
+  height: 110px;
+}
+
+.skill__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.77;
+  text-align: center;
+  color: #243994;
+
+  transform: translate(-50%, -50%);
+}

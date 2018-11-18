@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Обо мне</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -16,71 +17,74 @@
           <li class="social__item">
             <span class="visually-hidden">Я в контакте</span>
             <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
+              <svg class="social__icon" width="31" height="17">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Я в гитхабе</span>
             <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
+              <svg class="social__icon" width="26" height="22">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Я в инстаграме</span>
             <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
+              <svg class="social__icon" width="24" height="22">
+                <use xlink:href="img/sprite.svg#icon-in"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <nav class="nav  nav--fullscreen">
-        <button class="nav__toggle">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-          <span class="nav__toggle-elem"></span>
-        </button>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="my-works.html">Мои работы</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="blog.html">Блог</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link">Обо мне</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Авторизация</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__nav">
+        <nav class="nav  nav--fullscreen">
+          <button class="nav__toggle">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+            <span class="nav__toggle-elem"></span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="my-works.html">Мои работы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="blog.html">Блог</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">Обо мне</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Авторизация</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="page-header__person">
         <div class="person">
           <div class="person__photo">
-            <img src="#" alt="Фото автора портфолио">
+            <img src="img/avatar.JPG" alt="Фото автора портфолио">
           </div>
           <p class="person__name">Дмитрий Федотов</p>
           <p class="person__description">Личный сайт веб разработчика</p>
         </div>
       </div>
-      <div class="header__scroll  scroll">
+      <div class="page-header__scroll  scroll">
         <button class="scroll__button">
-          <svg class="scroll__icon" width="20" height="20">
-            <use xlink:href="img/sprite.svg#"></use>
+          <svg class="scroll__icon" width="26" height="16">
+            <use xlink:href="img/sprite.svg#icon-arrow_down"></use>
           </svg>
         </button>
       </div>
     </header>
-    <main class="content">
-      <h2 class="content-title">Обо мне</h2>
+
+    <main class="page-content">
       <section class="about">
+        <h2 class="content-title">Обо мне</h2>
         <div class="about__photo">
-          <img src="" alt="Фото автора портфолио">
+          <img src="img/avatar.jpg" alt="Фото автора портфолио" width="320" height="280">
         </div>
         <h3 class="about__title">Кто я</h3>
         <p class="about__info">
@@ -101,23 +105,35 @@
         <ul class="skills__list">
           <li class="skills__item">
             <div class="skills-type">
-              <p class="skills__type-title">Frontend</p>
+              <p class="skills-type__title">Frontend</p>
               <ul class="skills-type__list">
                 <li class="skills-type__item">
                   <div class="skill">
-                    <!-- <svg class="skill__circle"></svg> -->
+                    <svg class="circles" viewBox="0 0 110 110">
+                      <circle class="circles__first" r="45" cx="50%" cy="50%" fill="none" />
+                      <circle class="circles__second  circles__second--95" transform="rotate(-90 55 55)" r="45" cx="50%"
+                        cy="50%" fill="none" />
+                    </svg>
                     <p class="skill__name">HTML 5</p>
                   </div>
                 </li>
                 <li class="skills-type__item">
                   <div class="skill">
-                    <!-- <svg class="skill__circle"></svg> -->
+                    <svg class="circles" viewBox="0 0 110 110">
+                      <circle class="circles__first" r="45" cx="50%" cy="50%" fill="none" />
+                      <circle class="circles__second  circles__second--80" transform="rotate(-90 55 55)" r="45" cx="50%"
+                        cy="50%" fill="none" />
+                    </svg>
                     <p class="skill__name">CSS 3</p>
                   </div>
                 </li>
                 <li class="skills-type__item">
                   <div class="skill">
-                    <!-- <svg class="skill__circle"></svg> -->
+                    <svg class="circles" viewBox="0 0 110 110">
+                      <circle class="circles__first" r="45" cx="50%" cy="50%" fill="none" />
+                      <circle class="circles__second  circles__second--75" transform="rotate(-90 55 55)" r="45" cx="50%"
+                        cy="50%" fill="none" />
+                    </svg>
                     <p class="skill__name">JavaScript & jQuery</p>
                   </div>
                 </li>
@@ -126,17 +142,25 @@
           </li>
           <li class="skills__item">
             <div class="skills-type">
-              <p class="skills__type-title">Backend</p>
+              <p class="skills-type__title">Backend</p>
               <ul class="skills-type__list">
                 <li class="skills-type__item">
                   <div class="skill">
-                    <!-- <svg class="skill__circle"></svg> -->
+                    <svg class="circles" viewBox="0 0 110 110">
+                      <circle class="circles__first" r="45" cx="50%" cy="50%" fill="none" />
+                      <circle class="circles__second  circles__second--20" transform="rotate(-90 55 55)" r="45" cx="50%"
+                        cy="50%" fill="none" />
+                    </svg>
                     <p class="skill__name">Node.js & npm</p>
                   </div>
                 </li>
                 <li class="skills-type__item">
                   <div class="skill">
-                    <!-- <svg class="skill__circle"></svg> -->
+                    <svg class="circles" viewBox="0 0 110 110">
+                      <circle class="circles__first" r="45" cx="50%" cy="50%" fill="none" />
+                      <circle class="circles__second  circles__second--5" transform="rotate(-90 55 55)" r="45" cx="50%"
+                        cy="50%" fill="none" />
+                    </svg>
                     <p class="skill__name">Mongo.db</p>
                   </div>
                 </li>
@@ -145,23 +169,35 @@
           </li>
           <li class="skills__item">
             <div class="skills-type">
-              <p class="skills__type-title">Workflow</p>
+              <p class="skills-type__title">Workflow</p>
               <ul class="skills-type__list">
                 <li class="skills-type__item">
                   <div class="skill">
-                    <!-- <svg class="skill__circle"></svg> -->
+                    <svg class="circles" viewBox="0 0 110 110">
+                      <circle class="circles__first" r="45" cx="50%" cy="50%" fill="none" />
+                      <circle class="circles__second  circles__second--60" transform="rotate(-90 55 55)" r="45" cx="50%"
+                        cy="50%" fill="none" />
+                    </svg>
                     <p class="skill__name">GIT</p>
                   </div>
                 </li>
                 <li class="skills-type__item">
                   <div class="skill">
-                    <!-- <svg class="skill__circle"></svg> -->
+                    <svg class="circles" viewBox="0 0 110 110">
+                      <circle class="circles__first" r="45" cx="50%" cy="50%" fill="none" />
+                      <circle class="circles__second  circles__second--70" transform="rotate(-90 55 55)" r="45" cx="50%"
+                        cy="50%" fill="none" />
+                    </svg>
                     <p class="skill__name">Gulp</p>
                   </div>
                 </li>
                 <li class="skills-type__item">
                   <div class="skill">
-                    <!-- <svg class="skill__circle"></svg> -->
+                    <svg class="circles" viewBox="0 0 110 110">
+                      <circle class="circles__first" r="45" cx="50%" cy="50%" fill="none" />
+                      <circle class="circles__second  circles__second--10" transform="rotate(-90 55 55)" r="45" cx="50%"
+                        cy="50%" fill="none" />
+                    </svg>
                     <p class="skill__name">Webpack</p>
                   </div>
                 </li>
@@ -175,95 +211,104 @@
           <h2 class="contacts__title">Контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <!-- <svg class="contacts__icon"></svg> -->
+              <svg class="contacts__icon" width="34" height="34">
+                <use xlink:href="img/sprite.svg#icon-skype"></use>
+              </svg>
               <a class="contacts__link" href="skype:+1234567890?call">скайп</a>
             </li>
             <li class="contacts__item">
-              <!-- <svg class="contacts__icon"></svg> -->
+              <svg class="contacts__icon" width="34" height="34">
+                <use xlink:href="img/sprite.svg#icon-envelope_n"></use>
+              </svg>
               <a class="contacts__link" href="mailto:crismsfiva@gmail.com">crismsfiva@gmail.com</a>
             </li>
             <li class="contacts__item">
-              <!-- <svg class="contacts__icon"></svg> -->
+              <svg class="contacts__icon" width="34" height="34">
+                <use xlink:href="img/sprite.svg#icon-phone_n"></use>
+              </svg>
               <a class="contacts__link" href="tel:+1234567890">Телефон</a>
             </li>
             <li class="contacts__item">
-              <!-- <svg class="contacts__icon"></svg> -->
+              <svg class="contacts__icon" width="34" height="34">
+                <use xlink:href="img/sprite.svg#icon-map_n"></use>
+              </svg>
               <a class="contacts__link" href="yandex.ru">адрес</a>
             </li>
-          </ul </div> <div class="contacts__map">
-          <div class="map"></div>
+          </ul>
         </div>
+        <div class="map"></div>
       </section>
     </main>
-  </div>
-  <footer class="page-footer">
-    <div class="page-footer__top">
-      <p class="page-footer__intro">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
-      <div class="page-footer__nav">
-        <nav class="nav  nav--footer">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="my-works.html">Мои работы</a>
+
+    <footer class="page-footer">
+      <div class="page-footer__top">
+        <p class="page-footer__intro">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
+        <div class="page-footer__nav">
+          <nav class="nav  nav--footer">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="my-works.html">Мои работы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="blog.html">Блог</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link">Обо мне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Авторизация</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="page-footer__socials  social">
+            <li class="social__item">
+              <span class="visually-hidden">Я в контакте</span>
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="31" height="17">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link">Блог</a>
+            <li class="social__item">
+              <span class="visually-hidden">Я в гитхабе</span>
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="26" height="22">
+                  <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="about.html">Обо мне</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="index.html">Авторизация</a>
+            <li class="social__item">
+              <span class="visually-hidden">Я в инстаграме</span>
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="24" height="22">
+                  <use xlink:href="img/sprite.svg#icon-in"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="social">
-          <li class="social__item">
-            <span class="visually-hidden">Я в контакте</span>
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <span class="visually-hidden">Я в гитхабе</span>
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <span class="visually-hidden">Я в инстаграме</span>
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
+        <div class="page-footer__contacts  contacts--footer">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="skype:+1234567890?call">скайп</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:crismsfiva@gmail.com">crismsfiva@gmail.com</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+1234567890">Телефон</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="yandex.ru">адрес</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="page-footer__contacts">
-        <ul class="footer-contacts">
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__link" href="skype:+1234567890?call">скайп</a>
-          </li>
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__link" href="mailto:crismsfiva@gmail.com">crismsfiva@gmail.com</a>
-          </li>
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__link" href="tel:+1234567890">Телефон</a>
-          </li>
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__link" href="yandex.ru">адрес</a>
-          </li>
-        </ul>
+      <div class="page-footer__copyright">
+        <p class="copyright">© Дмитрий Федотов<br> создано с любовью в LoftSchool | 2017</p>
       </div>
-    </div>
-    <div class="footer__bottom">
-      <p class="copyright">© Дмитрий Федотов создано с любовью в LoftSchool | 2017</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

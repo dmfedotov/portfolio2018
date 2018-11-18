@@ -1,0 +1,50 @@
+.button {
+  display: block;
+  width: 148px;
+  padding: 10px 20px;
+
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button--auth {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+
+  border: 1px solid #ffffff;
+  transform: translateX(-50%);
+}
+
+.button--slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: $color-accent;
+}
+
+.button--slider__icon {
+  margin-right: 12px;
+
+  fill: #ffffff;
+}
+
+.button--submit {
+  font-size: 16px;
+
+  background-color: $color-accent;
+  border: none;
+}
+
+.button--transparent {
+  font-weight: 500;
+  font-size: 16px;
+
+  background-color: transparent;
+  border: none;
+}

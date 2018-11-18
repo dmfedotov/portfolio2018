@@ -1,0 +1,41 @@
+.about {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $color-beige;
+}
+
+.about__title {
+  position: relative;
+
+  margin-top: 26px;
+  margin-bottom: 5px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.3;
+  font-family: $secondary-font;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 56px;
+    height: 3px;
+
+    background-color: rgba($gray-font, 0.5);
+    transform: translateX(-50%);
+  }
+}
+
+.about__info {
+  padding-right: 10px;
+  padding-left: 10px;
+}

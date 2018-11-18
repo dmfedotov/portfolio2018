@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Мои работы</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -16,215 +17,232 @@
           <li class="social__item">
             <span class="visually-hidden">Я в контакте</span>
             <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
+              <svg class="social__icon" width="31" height="17">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Я в гитхабе</span>
             <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
+              <svg class="social__icon" width="26" height="22">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Я в инстаграме</span>
             <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
+              <svg class="social__icon" width="24" height="22">
+                <use xlink:href="img/sprite.svg#icon-in"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <nav class="nav  nav--fullscreen">
-        <button class="nav__toggle">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-          <span class="nav__toggle-elem"></span>
-        </button>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="my-works.html">Мои работы</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="blog.html">Блог</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link">Обо мне</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Авторизация</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__person">
-        <div class="person">
-          <div class="person__photo">
-            <img src="#" alt="Фото автора портфолио">
-          </div>
-          <p class="person__name">Дмитрий Федотов</p>
-          <p class="person__description">Личный сайт веб разработчика</p>
-        </div>
-      </div>
-      <div class="header__scroll  scroll">
-        <button class="scroll__button">
-          <svg class="scroll__icon" width="20" height="20">
-            <use xlink:href="img/sprite.svg#"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="header__bottom">
-        <div class="section-title">
-          <h2 class="section-title__header">Мои работы</h2>
-        </div>
-      </div>
-    </header>
-  </div>
-
-  <main class="content">
-    <section class="slider">
-      <div class="slider__display">
-        <img class="slider__display-img" src="#" alt="Сайт школы образования" width="248" height="160">
-      </div>
-      <div class="slider__info">
-        <h3 class="slider__title">Сайт школы онлайн образования</h3>
-        <p class="slider__technologies">HTML, CSS, JAVASCRIPT</p>
-        <a class="button  button--slider" href="#">
-          <svg class="button--slider__icon" width="20" height="20">
-            <use xlink:href="img/sprite.svg#"></use>
-          </svg>
-          <span class="button__text">Посмотреть сайт</span>
-        </a>
-      </div>
-      <div class="slider__controls  controls">
-        <div class="controls__left">
-          <button class="controls__button">
-            <span class="visually-hidden">Предыдущий слайд</span>
-            <svg class="controls__icon" width="20" height="20">
-              <use xlink:href="img/sprite.svg#"></use>
-            </svg>
+      <div class="page-header__nav">
+        <nav class="nav  nav--fullscreen">
+          <button class="nav__toggle">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+            <span class="nav__toggle-elem"></span>
           </button>
-        </div>
-        <div class="controls__right">
-          <button class="controls__button">
-            <span class="visually-hidden">Следующий слайд</span>
-            <svg class="controls__icon" width="20" height="20">
-              <use xlink:href="img/sprite.svg#"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="reviews">
-      <h2 class="reviews__title">Что обо мне говорят</h2>
-      <ul class="reviews__list">
-        <li class="reviews__item">
-          <img class="reviews__author-photo" src="" alt="Ковальчук Дмитрий — основатель Loftschool">
-          <p class="reviews__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
-          <p class="reviews__author-name">Ковальчук Дмитрий — основатель Loftschool</p>
-        </li>
-        <li class="reviews__item">
-          <img class="reviews__author-photo" src="" alt="Сабанцев Владимир — преподаватель">
-          <p class="reviews__text">Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!</p>
-          <p class="reviews__author-name">Сабанцев Владимир — преподаватель</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="feedback">
-      <h3 class="feedback__title">Связаться со мной</h3>
-      <form class="form  feedback__form" action="" method="POST">
-        <fieldset class="form__block">
-          <input class="form__field" type="text" name="name" id="name" placeholder="Имя">
-          <input class="form__field" type="email" name="email" id="email" placeholder="Email">
-          <textarea class="form__field" name="message" id="message">Ваше сообщение</textarea>
-        </fieldset>
-        <div class="form__buttons">
-          <button class="button" type="submit">Отправить</button>
-          <button class="button  button--transparent" type="reset">Очистить</button>
-        </div>
-      </form>
-      <div class="feedback__scroll  scroll">
-        <button class="scroll__button">
-          <svg class="scroll__icon" width="20" height="20">
-            <use xlink:href="img/sprite.svg#"></use>
-          </svg>
-        </button>
-      </div>
-    </section>
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__top">
-      <p class="page-footer__intro">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
-      <div class="page-footer__nav">
-        <nav class="nav  nav--footer">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="my-works.html">Мои работы</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link">Блог</a>
+              <a class="nav__link" href="blog.html">Блог</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="about.html">Обо мне</a>
+              <a class="nav__link">Обо мне</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="index.html">Авторизация</a>
             </li>
           </ul>
         </nav>
-        <ul class="social">
-          <li class="social__item">
-            <span class="visually-hidden">Я в контакте</span>
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <span class="visually-hidden">Я в гитхабе</span>
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <span class="visually-hidden">Я в инстаграме</span>
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
       </div>
-      <div class="page-footer__contacts">
-        <ul class="footer-contacts">
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__link" href="skype:+1234567890?call">скайп</a>
-          </li>
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__link" href="mailto:crismsfiva@gmail.com">crismsfiva@gmail.com</a>
-          </li>
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__link" href="tel:+1234567890">Телефон</a>
-          </li>
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__link" href="yandex.ru">адрес</a>
-          </li>
-        </ul>
+      <div class="page-header__person">
+        <div class="person">
+          <div class="person__photo">
+            <img src="img/avatar.JPG" alt="Фото автора портфолио">
+          </div>
+          <p class="person__name">Дмитрий Федотов</p>
+          <p class="person__description">Личный сайт веб разработчика</p>
+        </div>
       </div>
-    </div>
-    <div class="footer__bottom">
-      <p class="copyright">© Дмитрий Федотов создано с любовью в LoftSchool | 2017</p>
-    </div>
-  </footer>
+      <div class="page-header__scroll  page-header__scroll--my-works  scroll">
+        <button class="scroll__button">
+          <svg class="scroll__icon" width="26" height="16">
+            <use xlink:href="img/sprite.svg#icon-arrow_down"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="page-header__bottom">
+        <div class="section-title">
+          <h2 class="section-title__header">Мои работы</h2>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="page-content">
+
+      <section class="slider">
+        <div class="slider__display">
+          <img class="slider__display-img" src="img/work-1.png" alt="Сайт школы образования" width="248" height="160">
+        </div>
+        <div class="slider__info">
+          <h3 class="slider__title">Сайт школы онлайн образования</h3>
+          <p class="slider__technologies">HTML, CSS, JAVASCRIPT</p>
+          <a class="button  button--slider" href="#">
+            <svg class="button--slider__icon" width="20" height="19">
+              <use xlink:href="img/sprite.svg#icon-link"></use>
+            </svg>
+            <span class="button__text">Посмотреть сайт</span>
+          </a>
+        </div>
+        <div class="slider__controls  controls">
+          <div class="controls__left">
+            <img class="controls__image" src="img/work-2.png" alt="" width="65" height="90">
+            <button class="controls__button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg class="controls__icon" width="43" height="27">
+                <use xlink:href="img/sprite.svg#icon-portf_arrow_down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="controls__right">
+            <img class="controls__image" src="img/work-3.png" alt="" width="65" height="90">
+            <button class="controls__button">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg class="controls__icon" width="43" height="27">
+                <use xlink:href="img/sprite.svg#icon-portf_arrow_up"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__inner">
+          <h2 class="reviews__title">Что обо мне говорят</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="reviews__author-photo">
+                <img src="img/review-1.jpg" alt="Ковальчук Дмитрий — основатель Loftschool">
+              </div>
+              <p class="reviews__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца
+                только самых тяжелых испытаний и бессонных ночей!</p>
+              <p class="reviews__author-name"><span>Ковальчук Дмитрий</span><br> — основатель Loftschool</p>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__author-photo">
+                <img src="img/review-2.jpg" alt="Сабанцев Владимир — преподаватель">
+              </div>
+              <p class="reviews__text">Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на
+                слишком старых браузерах!</p>
+              <p class="reviews__author-name"><span>Сабанцев Владимир</span><br> — преподаватель</p>
+            </li>
+          </ul>
+
+          <div class="feedback">
+            <h3 class="feedback__title">Связаться со мной</h3>
+            <form class="form  feedback__form" action="" method="POST">
+              <div class="form__block">
+                <input class="form__field" type="text" name="name" id="name" placeholder="Имя">
+                <input class="form__field" type="email" name="email" id="email" placeholder="Email">
+                <textarea class="form__field  form__field--comment" name="message" id="message">Ваше сообщение</textarea>
+              </div>
+              <div class="form__buttons">
+                <button class="form__button  button  button--submit" type="submit">Отправить</button>
+                <button class="form__button  button  button--transparent" type="reset">Очистить</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="reviews__scroll  scroll">
+            <button class="scroll__button">
+              <svg class="scroll__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-portf_arrow_up"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <footer class="page-footer  page-footer--transparent">
+          <div class="page-footer__top">
+            <p class="page-footer__intro">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
+            <div class="page-footer__nav">
+              <nav class="nav  nav--footer">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link">Мои работы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="blog.html">Блог</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="about.html">Обо мне</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="index.html">Авторизация</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="page-footer__socials  social">
+                <li class="social__item">
+                  <span class="visually-hidden">Я в контакте</span>
+                  <a class="social__link" href="#">
+                    <svg class="social__icon" width="31" height="17">
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <span class="visually-hidden">Я в гитхабе</span>
+                  <a class="social__link" href="#">
+                    <svg class="social__icon" width="26" height="22">
+                      <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <span class="visually-hidden">Я в инстаграме</span>
+                  <a class="social__link" href="#">
+                    <svg class="social__icon" width="24" height="22">
+                      <use xlink:href="img/sprite.svg#icon-in"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__contacts  contacts--footer">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link" href="skype:+1234567890?call">скайп</a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="mailto:crismsfiva@gmail.com">crismsfiva@gmail.com</a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:+1234567890">Телефон</a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="yandex.ru">адрес</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-footer__copyright">
+            <p class="copyright">© Дмитрий Федотов<br> создано с любовью в LoftSchool | 2017</p>
+          </div>
+        </footer>
+      </section>
+
+    </main>
+
+  </div>
 </body>
 
 </html>

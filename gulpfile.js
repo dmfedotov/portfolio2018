@@ -6,6 +6,8 @@ const browserSync  = require('browser-sync').create();
 // const htmlmin      = require('gulp-htmlmin');
 const autoprefixer = require('autoprefixer');
 const svgstore     = require('gulp-svgstore');
+const cheerio      = require('gulp-cheerio');
+const replace      = require('gulp-replace');
 const postcss      = require("gulp-postcss");
 const uncss        = require('postcss-uncss');
 const plumber      = require("gulp-plumber");
@@ -148,6 +150,17 @@ gulp.task('sprite', function () {
     .pipe(svgstore({
       inlineSvg: true
     }))
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: {
+        xmlMode: true
+      }
+    }))
+    .pipe(replace('&gt;', '>'))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest(paths.images.dest));
 });
@@ -171,7 +184,7 @@ gulp.task('build', gulp.series(
   'images',
   // 'webpImage',
   'style',
-  // 'sprite',
+  'sprite',
   'html',
   'uncss'
 ));

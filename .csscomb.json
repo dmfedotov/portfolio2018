@@ -160,7 +160,7 @@
       "unicode-bidi",
       "columns",
       "column-count",
-      "column-fill",
+      "column-",
       "column-gap",
       "column-rule",
       "column-rule-color",

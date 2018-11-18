@@ -1,0 +1,37 @@
+.controls {
+  display: flex;
+
+  background-color: rgba(#b1b2ba, 0.4);
+}
+
+.controls__left,
+.controls__right {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 93px;
+}
+
+.controls__image {
+  position: relative;
+  z-index: -1;
+
+  width: 65px;
+}
+
+.controls__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-color: transparent;
+  border: none;
+  transform: translate(-50%, -50%);
+}
+
+.controls__icon {
+  fill: #ffffff;
+}

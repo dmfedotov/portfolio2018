@@ -1,0 +1,20 @@
+.page-content {
+  flex: 1 0 auto;
+}
+
+.wrapper--welcome .page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.page-content__auth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}

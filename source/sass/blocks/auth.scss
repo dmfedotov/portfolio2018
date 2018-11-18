@@ -1,0 +1,40 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.auth__info {
+  padding-top: 40px;
+
+  background-color: rgba(#1c1f29, 0.5);
+  border-radius: 5px 5px 0 0;
+}
+
+.auth__socials {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.auth__links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.auth__link {
+  display: block;
+  flex-grow: 1;
+  padding: 10px 21px;
+
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+
+  background-color: $color-accent;
+  border-right: 2px solid #7296d3;
+
+  &:last-child {
+    border-right: none;
+  }
+}

@@ -1,0 +1,67 @@
+.reviews {
+  background: #000000 url("../../img/night_works_bg.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.reviews__inner {
+  position: relative;
+
+  padding: 35px 10px 98px;
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.2;
+  font-family: $secondary-font;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+
+  color: #ffffff;
+  font-style: italic;
+}
+
+.reviews__author-photo {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+
+.reviews__author-name {
+  margin-bottom: 0;
+
+  text-align: center;
+}
+
+.reviews__author-name span {
+  font-weight: 700;
+}
+
+.reviews__scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
