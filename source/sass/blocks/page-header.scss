@@ -53,3 +53,15 @@
 
   background-color: rgba(#0d1120, 0.85);
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__socials {
+    top: 35px;
+    left: 30px;
+  }
+
+  .page-header__nav {
+    top: 35px;
+    right: 30px;
+  }
+}

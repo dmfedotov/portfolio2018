@@ -1,4 +1,13 @@
 .map {
   height: 496px;
+
   background: #b2c0d7 url("../../img/map.jpg") center;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 100%;
+
+    background-position-y: top;
+  }
 }

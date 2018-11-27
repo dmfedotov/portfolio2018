@@ -5,6 +5,11 @@
   background-color: $color-beige;
 }
 
+.about__photo {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .about__title {
   position: relative;
 
@@ -38,4 +43,27 @@
 .about__info {
   padding-right: 10px;
   padding-left: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .about__info {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+
+  .about__title {
+    margin-top: 46px;
+
+    font-size: 30px;
+    line-height: 1.2;
+
+    &::after {
+      width: 90px;
+
+      background-color: #393e42;
+    }
+  }
 }

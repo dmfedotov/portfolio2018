@@ -71,3 +71,30 @@
 .skills-type__item {
   margin: 0 20px 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .skills__title {
+    width: 250px;
+
+    font-size: 30px;
+    line-height: 1.2;
+
+    &::after {
+      width: 90px;
+
+      background-color: #393e42;
+    }
+  }
+
+  .skills__info {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+
+  .skills__list {
+    padding-bottom: 32px;
+  }
+}
