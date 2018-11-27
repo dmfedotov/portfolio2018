@@ -48,3 +48,12 @@
   background-color: transparent;
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .button--auth {
+    right: 20px;
+    left: initial;
+
+    transform: none;;
+  }
+}

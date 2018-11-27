@@ -82,3 +82,11 @@
 
   list-style-type: none;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts--footer {
+    .contacts__item {
+      text-align: right;
+    }
+  }
+}

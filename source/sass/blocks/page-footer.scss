@@ -56,3 +56,44 @@
     background-color: transparent;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 23px;
+    padding-bottom: 15px;
+    padding-left: 23px;
+  }
+
+  .page-footer__intro {
+    flex-grow: 1;
+  }
+
+  .page-footer--welcome {
+    .page-footer__copyright br {
+      display: none;
+    }
+  }
+
+  .page-footer__nav {
+    align-items: flex-start;
+    width: 50%;
+
+    border-bottom: none;
+  }
+
+  .page-footer__socials {
+    width: auto;;
+  }
+
+  .page-footer__contacts {
+    width: 50%;
+    padding: 0;
+  }
+
+  .page-footer__copyright {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

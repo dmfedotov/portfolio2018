@@ -3,3 +3,9 @@
 
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright br {
+    display: none;
+  }
+}

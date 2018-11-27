@@ -83,3 +83,46 @@
     bottom: -10px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .nav--fullscreen {
+    width: 40px;
+    height: 35px;
+  }
+
+  .nav__toggle-elem {
+    width: 40px;
+    height: 5px;
+
+    &::before {
+      top: -15px;
+
+      width: 40px;
+      height: 5px;
+    }
+
+    &::after {
+      bottom: -15px;
+
+      width: 40px;
+      height: 5px;
+    }
+  }
+
+  .nav--footer {
+    padding-right: 0;
+    padding-left: 0;
+
+    .nav__list {
+      justify-content: flex-start;
+    }
+
+    .nav__item {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

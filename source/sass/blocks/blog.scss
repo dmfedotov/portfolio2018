@@ -30,3 +30,15 @@
 .blog__article-date {
   color: #083c96;
 }
+
+@media (min-width: $tablet-width) {
+  .blog {
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+
+  .blog__article-title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
