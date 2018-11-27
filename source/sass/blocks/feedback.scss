@@ -33,3 +33,15 @@
     transform: translateX(-50%);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 45px;
+  }
+
+  .feedback__title {
+    font-size: 30px;
+  }
+}

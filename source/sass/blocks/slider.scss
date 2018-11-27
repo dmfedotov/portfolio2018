@@ -55,3 +55,24 @@
   color: #243994;
   text-transform: uppercase;
 }
+
+.slider__link {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__info {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+
+  .slider__title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .slider__technologies {
+    font-size: 16px;
+  }
+}

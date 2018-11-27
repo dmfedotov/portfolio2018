@@ -30,3 +30,9 @@
 .form__button {
   flex-grow: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .form__field--comment {
+    height: 130px;
+  }
+}
