@@ -13,8 +13,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 16px;
   padding-right: 8px;
-  padding-bottom: 16px;
   padding-left: 8px;
 }
 
@@ -110,6 +110,7 @@
   }
 
   .nav--footer {
+    justify-content: flex-start;
     padding-right: 0;
     padding-left: 0;
 
@@ -124,5 +125,12 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav--footer {
+    font-size: 16px;
+    font-weight: 500;
   }
 }

@@ -114,9 +114,13 @@
     margin-bottom: 20px;
   }
 
-  .contacts--footer {
-    .contacts__item {
-      text-align: right;
-    }
+  .contacts--footer .contacts__item {
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts--footer .contacts__item {
+    text-align-last: left;
   }
 }
