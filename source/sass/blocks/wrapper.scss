@@ -11,3 +11,9 @@
   background: #3b5381 url("../../img/header-bg.jpg") no-repeat center;
   background-size: cover;
 }
+
+@media (min-width: $desktop-width) {
+  .wrapper--welcome {
+    background-image: url("../../img/header-bg-1200.png");
+  }
+}
