@@ -21,3 +21,15 @@
     line-height: 1.06;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .section-title__header {
+    font-size: 63px;
+    line-height: 1.1;
+  }
+
+  .section-title__info {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}

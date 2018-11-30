@@ -90,6 +90,8 @@
   .blog {
     padding-right: 23px;
     padding-left: 23px;
+
+    background: #f9f8f0;
   }
 
   .blog__article-title {
@@ -100,7 +102,13 @@
 
 @media (min-width: $desktop-width) {
   .blog {
+    background: #faf8f0;
+  }
+
+  .blog__wrapper {
     display: flex;
+    width: $desktop-width;
+    margin: 0 auto;
 
     background-color: #faf8f0;
   }
@@ -121,5 +129,22 @@
 
   .blog__content {
     width: 57%;
+  }
+
+  .blog__article {
+    margin-bottom: 63px;
+    padding-bottom: 47px;
+  }
+
+  .blog__article-title {
+    font-size: 35px;
+  }
+
+  .blog__article-date {
+    font-size: 16px;
+  }
+
+  .blog__article p {
+    font-size: 16px;
   }
 }
