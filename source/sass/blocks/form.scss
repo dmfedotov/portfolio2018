@@ -36,3 +36,9 @@
     height: 130px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__field {
+    font-size: 16px;
+  }
+}

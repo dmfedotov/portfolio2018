@@ -29,7 +29,7 @@
     width: 56px;
     height: 3px;
 
-    background-color: #ffffff;
+    background-color: rgba(#ffffff, 0.5);
     transform: translateX(-50%);
   }
 }
@@ -43,5 +43,16 @@
 
   .feedback__title {
     font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__title {
+    font-size: 35px;
+    line-height: 1.1;
+
+    &::after {
+      width: 90px;
+    }
   }
 }

@@ -54,3 +54,10 @@
     width: 150px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .controls__left,
+  .controls__right {
+    height: 100%;
+  }
+}
