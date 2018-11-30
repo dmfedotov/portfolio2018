@@ -10,3 +10,12 @@
   color: #373e42;
   text-transform: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .content-title {
+    margin-bottom: 44px;
+
+    font-size: 63px;
+    line-height: 1;
+  }
+}

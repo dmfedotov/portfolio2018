@@ -18,3 +18,10 @@
 
   transform: translate(-50%, -50%);
 }
+
+@media (min-width: $desktop-width) {
+  .page-content--about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
