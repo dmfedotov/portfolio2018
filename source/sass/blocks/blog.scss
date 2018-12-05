@@ -148,3 +148,9 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width-wide) {
+  .blog__menu {
+    margin-right: 116px;
+  }
+}
