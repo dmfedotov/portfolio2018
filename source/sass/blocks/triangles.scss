@@ -1,0 +1,29 @@
+.triangles {
+  position: absolute;
+  bottom: 100%;
+
+  display: flex;
+  width: 100%;
+}
+
+.triangles__triangle {
+  width: 50%;
+
+  fill: #f9f8f0;
+}
+
+.triangles--about {
+  .triangles__triangle--left {
+    fill: #f2f0e8;
+  }
+
+  .triangles__triangle--right {
+    fill: #f4f5f0;
+  }
+}
+
+.triangles--works {
+  .triangles__triangle {
+    fill: rgba(#0d1120, 0.85);
+  }
+}

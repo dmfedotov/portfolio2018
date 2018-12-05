@@ -64,4 +64,12 @@
     top: 35px;
     right: 30px;
   }
+
+  .page-header__bottom {
+    position: relative;
+  }
+
+  .page-header__scroll--works {
+    bottom: calc(100% + 50px);
+  }
 }
