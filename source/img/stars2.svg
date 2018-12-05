@@ -10,7 +10,7 @@
 <circle fill="#FFFFFF" cx="117.25" cy="96.25" r="2.75"/>
 <circle fill="#FFFFFF" cx="126.25" cy="41.25" r="1.911"/>
 <circle fill="#FFFFFF" cx="167.25" cy="4.25" r="4.25"/>
-<polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="72.75,52.75 117.25,96.25 4.25,92.25 48.25,128.25 
+<polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="72.75,52.75 117.25,96.25 4.25,92.25 48.25,128.25
 	117.25,96.25 167.25,4.25 126.25,41.25 72.75,54.334 8.25,22.25 "/>
 <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="48.25" y1="131.334" x2="8.5" y2="24.339"/>
 </svg>

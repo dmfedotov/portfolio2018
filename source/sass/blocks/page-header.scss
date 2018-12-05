@@ -26,8 +26,10 @@
 }
 
 .page-header__person {
-  width: 100%;
-  min-width: 200px;
+  position: relative;
+  z-index: 10;
+
+  max-width: 300px;
   margin-top: 116px;
   margin-right: auto;
   margin-left: auto;
@@ -40,12 +42,14 @@
 
   transform: translateX(-50%);
 
-  &--my-works {
-    bottom: 146px;
+  &--works {
+    bottom: calc(100% + 50px);
   }
 }
 
 .page-header__bottom {
+  position: relative;
+
   display: flex;
   justify-content: center;
   padding-top: 24px;
@@ -65,11 +69,12 @@
     right: 30px;
   }
 
-  .page-header__bottom {
-    position: relative;
+  .page-header__person {
+    max-width: 400px;
   }
 
-  .page-header__scroll--works {
-    bottom: calc(100% + 50px);
+  .page-header__bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }

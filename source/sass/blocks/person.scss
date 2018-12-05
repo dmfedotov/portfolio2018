@@ -31,16 +31,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .person--content-page {
-    .person__name {
-      margin-bottom: 0;
+  .person__name {
+    margin-bottom: 0;
 
-      font-size: 35px;
-    }
+    font-size: 35px;
+  }
 
-    .person__description {
-      font-size: 16px;
-      line-height: 1.5;
-    }
+  .person__description {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }

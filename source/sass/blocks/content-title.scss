@@ -11,6 +11,13 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .content-title {
+    font-size: 49px;
+    line-height: 1.06;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .content-title {
     margin-bottom: 44px;
