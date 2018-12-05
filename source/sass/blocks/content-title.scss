@@ -19,3 +19,9 @@
     line-height: 1;
   }
 }
+
+@media (min-width: $desktop-width-wide) {
+  .content-title {
+    margin-top: 15px;
+  }
+}
