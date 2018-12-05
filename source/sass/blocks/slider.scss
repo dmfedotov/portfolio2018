@@ -6,7 +6,7 @@
 .slider__display {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 50px 44px;
 
   background-color: #e3e2de;
@@ -110,6 +110,10 @@
   .slider__display {
     width: 50%;
     height: 70%;;
+  }
+
+  .slider__display-img {
+    width: 380px;
   }
 
   .slider__controls {
