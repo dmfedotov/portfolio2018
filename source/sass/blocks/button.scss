@@ -68,3 +68,9 @@
     top: 24px;
   }
 }
+
+@media (min-width: $desktop-width-wide) {
+  .button--auth {
+    right: 100px;
+  }
+}

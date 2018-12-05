@@ -17,3 +17,9 @@
     background-image: url("../../img/header-bg-1200.png");
   }
 }
+
+@media (min-width: $desktop-width-wide) {
+  .wrapper--welcome {
+    background-image: url("../../img/header-bg.jpg");
+  }
+}

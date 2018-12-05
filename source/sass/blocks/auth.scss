@@ -39,3 +39,15 @@
     border-right: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .auth {
+    width: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .auth {
+    width: 380px;
+  }
+}
