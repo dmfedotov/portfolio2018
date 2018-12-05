@@ -134,3 +134,9 @@
     font-weight: 500;
   }
 }
+
+@media (min-width: $desktop-width-wide) {
+  .nav--footer {
+    margin-bottom: 26px;
+  }
+}
