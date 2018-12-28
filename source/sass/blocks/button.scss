@@ -48,3 +48,29 @@
   background-color: transparent;
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .button--auth {
+    top: 20px;
+    right: 20px;
+    left: initial;
+
+    transform: none;;
+  }
+
+  .button--slider {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--auth {
+    top: 24px;
+  }
+}
+
+@media (min-width: $desktop-width-wide) {
+  .button--auth {
+    right: 100px;
+  }
+}

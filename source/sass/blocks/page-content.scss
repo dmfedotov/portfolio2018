@@ -1,4 +1,6 @@
 .page-content {
+  position: relative;
+
   flex: 1 0 auto;
 }
 
@@ -17,4 +19,11 @@
   left: 50%;
 
   transform: translate(-50%, -50%);
+}
+
+@media (min-width: $desktop-width) {
+  .page-content--about {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

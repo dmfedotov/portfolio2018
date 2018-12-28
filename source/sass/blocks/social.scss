@@ -32,3 +32,17 @@
 
   fill: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .social--footer {
+    justify-content: flex-start;
+
+    .social__item {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

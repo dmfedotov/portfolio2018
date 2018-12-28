@@ -82,3 +82,78 @@
 
   list-style-type: none;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    position: relative;
+
+    height: 680px;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 350px;
+    padding: 30px 20px;
+
+    background: rgba(#ffffff, 0.7);
+    transform: translate(-50%, -50%);
+  }
+
+  .contacts__title {
+    margin-top: 0;
+
+    font-size: 30px;
+    line-height: 1.37;
+
+    &::after {
+      width: 90px;
+    }
+  }
+
+  .contacts__item {
+    margin-bottom: 20px;
+  }
+
+  .contacts--footer .contacts__item {
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 100%;
+  }
+
+  .contacts__wrapper {
+    width: 580px;
+  }
+
+  .contacts__title {
+    margin-bottom: 30px;
+
+    font-size: 35px;
+    line-height: 1.1;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 270px;
+  }
+
+  .contacts__icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .contacts--footer .contacts__item {
+    text-align-last: left;
+  }
+}

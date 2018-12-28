@@ -1,5 +1,22 @@
 .copyright {
   margin: 0;
+  padding: 5px 10px;
 
   text-align: center;
+
+  background-color: $color-accent;
+
+  &--transparent {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer--welcome .copyright {
+    padding-bottom: 38px;
+  }
+
+  .copyright br {
+    display: none;
+  }
 }

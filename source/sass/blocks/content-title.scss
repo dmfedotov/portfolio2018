@@ -10,3 +10,25 @@
   color: #373e42;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .content-title {
+    font-size: 49px;
+    line-height: 1.06;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-title {
+    margin-bottom: 44px;
+
+    font-size: 63px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width-wide) {
+  .content-title {
+    margin-top: 15px;
+  }
+}

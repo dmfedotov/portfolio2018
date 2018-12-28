@@ -1,0 +1,41 @@
+.triangles {
+  position: absolute;
+  bottom: 100%;
+
+  display: flex;
+  width: 100%;
+}
+
+.triangles__wrap {
+  display: flex;
+  width: 50%;
+}
+
+.triangles__item {
+  width: 100%;
+  height: 100%;
+
+  fill: #f9f8f0;
+}
+
+.triangles--about .triangles__item {
+  fill: #f2f0e8;
+}
+
+.triangles--works {
+  .triangles__item {
+    fill: rgba(#0d1120, 0.85);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .triangles--about {
+    .triangles__item--left {
+      fill: #f2f0e8;
+    }
+
+    .triangles__item--right {
+      fill: #f4f5f0;
+    }
+  }
+}

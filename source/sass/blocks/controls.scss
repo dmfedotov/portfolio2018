@@ -1,7 +1,7 @@
 .controls {
   display: flex;
 
-  background-color: rgba(#b1b2ba, 0.4);
+  // background-color: rgba(#b1b2ba, 0.4);
 }
 
 .controls__left,
@@ -13,6 +13,14 @@
   align-items: center;
   width: 50%;
   height: 93px;
+}
+
+.controls__left {
+  background-color: rgba(#b1b2ba, 0.4);
+}
+
+.controls__right {
+  background-color: rgba(#96979e, 0.4);
 }
 
 .controls__image {
@@ -34,4 +42,22 @@
 
 .controls__icon {
   fill: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .controls__left,
+  .controls__right {
+    height: 215px;
+  }
+
+  .controls__image {
+    width: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .controls__left,
+  .controls__right {
+    height: 100%;
+  }
 }

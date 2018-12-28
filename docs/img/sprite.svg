@@ -1,12 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="about_bg_left" viewBox="0 0 900.006 1013.986">
-<g>
-	<path fill-rule="evenodd" clip-rule="evenodd" d="M0.01,0l899.997,159.008v854.979H0L0.01,0z"/>
-</g>
-</symbol><symbol id="about_bg_right" viewBox="0 0 900.331 1009.986">
-<g>
-	<path fill-rule="evenodd" clip-rule="evenodd" d="M0,155.008L900.331,0l-0.005,1009.986H0V155.008z"/>
-</g>
-</symbol><symbol id="bg" viewBox="0 0 2032 360.368">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="bg" viewBox="0 0 2032 360.368">
 <g>
 	<polygon fill-rule="evenodd" clip-rule="evenodd" points="2032,360.368 2032,0 1016,173 0,0 0,360.368 	"/>
 </g>
