@@ -1,0 +1,39 @@
+.login-form__field {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login-form__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+
+  background: #f0efe9;
+
+  svg {
+    fill: #c4cbcd;
+  }
+}
+
+.login-form__input {
+  flex-grow: 1;
+  padding: 12px 20px;
+
+  line-height: 1.7;
+  color: #373e42;
+
+  border: none;
+}
+
+.login-form__question {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+}

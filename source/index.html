@@ -14,48 +14,101 @@
     <main class="page-content">
       <a class="button button--auth" href="#">Авторизоваться</a>
 
-      <article class="auth  welcome-page__auth">
-        <section class="auth__info  person">
-          <div class="person__photo">
-            <img src="img/avatar.JPG" alt="Фото автора портфолио">
-          </div>
-          <p class="person__name">Дмитрий Федотов</p>
-          <p class="person__description">Личный сайт веб разработчика</p>
-          <div class="auth__socials">
-            <ul class="social">
-              <li class="social__item">
-                <span class="visually-hidden">Я в контакте</span>
-                <a class="social__link" href="#">
-                  <svg class="social__icon" width="31" height="17">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <span class="visually-hidden">Я в гитхабе</span>
-                <a class="social__link" href="#">
-                  <svg class="social__icon" width="26" height="22">
-                    <use xlink:href="img/sprite.svg#icon-github"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <span class="visually-hidden">Я в инстаграме</span>
-                <a class="social__link" href="#">
-                  <svg class="social__icon" width="24" height="22">
-                    <use xlink:href="img/sprite.svg#icon-in"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="auth__links">
-          <a class="auth__link" href="my-works.html">Мои работы</a>
-          <a class="auth__link" href="about.html">Обо мне</a>
-          <a class="auth__link" href="blog.html">Блог</a>
-        </section>
-      </article>
+      <div class="flip-container">
+        <div class="flipper">
+          <article class="auth  flipper__front">
+            <section class="auth__info  person">
+              <div class="person__photo">
+                <img src="img/avatar.JPG" alt="Фото автора портфолио">
+              </div>
+              <p class="person__name">Дмитрий Федотов</p>
+              <p class="person__description">Личный сайт веб разработчика</p>
+              <div class="auth__socials">
+                <ul class="social">
+                  <li class="social__item">
+                    <span class="visually-hidden">Я в контакте</span>
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="31" height="17">
+                        <use xlink:href="img/sprite.svg#icon-vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <span class="visually-hidden">Я в гитхабе</span>
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="26" height="22">
+                        <use xlink:href="img/sprite.svg#icon-github"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <span class="visually-hidden">Я в инстаграме</span>
+                    <a class="social__link" href="#">
+                      <svg class="social__icon" width="24" height="22">
+                        <use xlink:href="img/sprite.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="auth__links">
+              <a class="auth__link" href="my-works.html">Мои работы</a>
+              <a class="auth__link" href="about.html">Обо мне</a>
+              <a class="auth__link" href="blog.html">Блог</a>
+            </section>
+          </article>
+          <article class="login  flipper__back">
+            <section class="login__info">
+              <h2 class="login__title">Авторизуйтесь</h2>
+              <form class="login-form" action="#" method="POST" id="login-form">
+                <label class="login-form__field">
+                  <div class="login-form__icon">
+                    <svg width="15" height="16">
+                      <use xlink:href="img/sprite.svg#icon-login"></use>
+                    </svg>
+                  </div>
+                  <input class="login-form__input" type="text" placeholder="Логин">
+                </label>
+                <label class="login-form__field">
+                  <div class="login-form__icon">
+                    <svg width="17" height="16">
+                      <use xlink:href="img/sprite.svg#icon-password"></use>
+                    </svg>
+                  </div>
+                  <input class="login-form__input" type="text" placeholder="Пароль">
+                </label>
+                <label class="login-form__field  login-checkbox">
+                  <input class="login-checkbox__input  visually-hidden" type="checkbox" name="human" id="human" checked>
+                  <span class="login-checkbox__fake">
+                    <svg width="12" height="9">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span class="login-checkbox__value">Я человек</span>
+                </label>
+                <p class="login-form__question">Вы точно не робот?</p>
+                <div class="login-radio">
+                  <label class="login-radio__item">
+                    <input class="login-radio__input  visually-hidden" type="radio" name="robot" id="robot-yes" checked>
+                    <span class="login-radio__fake"></span>
+                    <span class="login-radio__value">Да</span>
+                  </label>
+                  <label class="login-radio__item">
+                    <input class="login-radio__input  visually-hidden" type="radio" name="robot" id="robot-no">
+                    <span class="login-radio__fake"></span>
+                    <span class="login-radio__value">Я не уверен</span>
+                  </label>
+                </div>
+              </form>
+            </section>
+            <section class="login__buttons">
+              <button class="login__button  button  button--accent">На главную</button>
+              <button class="login__button  button  button--accent" type="submit" form="login-form">Войти</button>
+            </section>
+          </article>
+        </div>
+      </div>
     </main>
 
     <footer class="page-footer  page-footer--welcome">

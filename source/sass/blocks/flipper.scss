@@ -1,0 +1,30 @@
+.flipper {
+  position: relative;
+
+  width: 300px;
+
+  transform-style: preserve-3d;
+
+  transition: 0.6s;
+
+  &--active {
+    transform: rotateY(180deg);
+  }
+}
+
+.flipper__front,
+.flipper__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  backface-visibility: hidden;
+}
+
+.flipper__front {
+  z-index: 10;
+}
+
+.flipper__back {
+  transform: rotateY(180deg);
+}

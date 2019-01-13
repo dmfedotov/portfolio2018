@@ -6,6 +6,8 @@
   font-weight: 500;
   text-align: center;
   color: #ffffff;
+
+  border: none;
 }
 
 .button--auth {
@@ -17,6 +19,10 @@
   transform: translateX(-50%);
 }
 
+.button--accent {
+  background-color: $color-accent;
+}
+
 .button--slider {
   display: flex;
   justify-content: center;
@@ -24,8 +30,6 @@
   width: auto;
   margin-right: auto;
   margin-left: auto;
-
-  background-color: $color-accent;
 }
 
 .button--slider__icon {
