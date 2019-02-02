@@ -4,7 +4,7 @@
   "description": "Личный проект «Портфолио» от Loftschool",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.3.x",
+    "autoprefixer": "9.4.x",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "eslint": "^5.8.0",
@@ -23,11 +23,11 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgstore": "^7.0.0",
     "gulp-uglify": "^3.0.1",
-    "gulp-webp": "^3.0.0",
+    "gulp-webp": "^4.0.1",
     "normalize.css": "^8.0.0",
     "postcss-uncss": "^0.16.1",
     "pug": "^2.0.3",
-    "stylelint": "9.8.x",
+    "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x",
     "uncss": "^0.16.2"
   },
