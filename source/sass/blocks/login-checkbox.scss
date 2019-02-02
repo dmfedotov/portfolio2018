@@ -12,7 +12,9 @@
   height: 20px;
   margin-right: 10px;
 
-  background: #0548be;
+  background: #ffffff;
+
+  transition: background 0.2s ease;
 
   svg {
     width: 0;
@@ -22,6 +24,10 @@
 
     fill: #ffffff;
   }
+}
+
+.login-checkbox__input:checked + .login-checkbox__fake {
+  background: #0548be;
 }
 
 .login-checkbox__input:checked + .login-checkbox__fake svg {

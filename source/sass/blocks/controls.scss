@@ -38,6 +38,7 @@
   background-color: transparent;
   border: none;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .controls__icon {
@@ -48,6 +49,14 @@
   .controls__left,
   .controls__right {
     height: 215px;
+  }
+
+  .controls__left:hover {
+    background-color: rgba(#b1b2ba, 0.3);
+  }
+
+  .controls__right:hover {
+    background-color: rgba(#96979e, 0.3);
   }
 
   .controls__image {

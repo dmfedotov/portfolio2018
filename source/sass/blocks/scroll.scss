@@ -1,3 +1,13 @@
+.scroll {
+  z-index: 20;
+
+  cursor: pointer;
+
+  &:hover .scroll__icon {
+    fill: #ffffff;
+  }
+}
+
 .scroll__button {
   padding: 0;
 
@@ -9,6 +19,8 @@
 .scroll__icon {
   width: 26px;
   height: 16px;
+
+  transition: fill 0.2s ease;
 
   fill: rgba(#ffffff, 0.7);
 }

@@ -17,6 +17,13 @@
 
   border: 1px solid #ffffff;
   transform: translateX(-50%);
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #083c96;
+    border-color: transparent;
+  }
 }
 
 .button--accent {

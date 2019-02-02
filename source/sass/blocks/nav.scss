@@ -4,6 +4,23 @@
   width: 26px;
   height: 23px;
 
+  cursor: pointer;
+  opacity: 0.7;
+
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+
+    .nav__toggle-elem::before {
+      transform: translateY(-2px)
+    }
+
+    .nav__toggle-elem::after {
+      transform: translateY(2px)
+    }
+  }
+
   .nav__list {
     display: none;
   }
@@ -62,6 +79,7 @@
   background: #ffffff;
   border-radius: 2px;
 
+
   &::before,
   &::after {
     content: "";
@@ -73,6 +91,8 @@
 
     background: #ffffff;
     border-radius: 2px;
+
+    transition: all 0.2s ease;
   }
 
   &::before {
@@ -130,8 +150,8 @@
 
 @media (min-width: $desktop-width) {
   .nav--footer {
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
   }
 }
 

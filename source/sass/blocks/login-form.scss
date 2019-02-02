@@ -4,13 +4,27 @@
   margin-bottom: 20px;
 }
 
+.login-form__field--error {
+  .login-form__input,
+  .login-form__icon {
+    border-color: $color-red;
+  }
+
+  .login-form__icon svg {
+    fill: $color-red;
+  }
+}
+
 .login-form__icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  order: -10;
   width: 45px;
+  height: 45px;
 
   background: #f0efe9;
+  border: 1px solid transparent;
 
   svg {
     fill: #c4cbcd;
@@ -19,12 +33,27 @@
 
 .login-form__input {
   flex-grow: 1;
-  padding: 12px 20px;
+  padding: 9px 20px;
 
   line-height: 1.7;
   color: #373e42;
 
-  border: none;
+  border: 1px solid transparent;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+
+  &:focus {
+    border-color: #0548be;
+  }
+}
+
+.login-form__input:focus + .login-form__icon {
+  border-color: #0548be;
+
+  svg {
+    fill: #0548be;
+  }
 }
 
 .login-form__question {
